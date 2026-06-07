@@ -991,6 +991,7 @@
     scrollBtn.classList.toggle('show', window.scrollY > 400);
     navbar.classList.toggle('nav-scrolled', window.scrollY > 10);
   });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   // Fade-up on scroll
   const observer = new IntersectionObserver((entries) => {
